@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&family=Roboto:wght@100;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.title{
+    background-color:#4d579c;
+     /* rgb(216, 216, 216); */
+    color: white;
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #b0c8ec;
+    font-size: 15px;
+    padding:13px;
+    font-family: 'Montserrat', sans-serif;
+    position:initial;
+}
+
+.ol-geocoder.gcd-gl-container {
+    top: 100px!important;
+    left: .5em!important;
+    width: 2.1em!important;
+    height: 2.1em!important;
+}
+
+.ol-geocoder .gcd-gl-container{
+    width: 2.1em!important;
+    height: 2.1em!important;
+}
+
+.ol-popup{
+    color: black;
+    font-size: 12px;
+    font-family:'Roboto', sans-serif;
+    padding: 15px;
+    background-color: white;
+    width: 370px;
+    
+}
+
+.ol-popup-content ul li table tbody tr th{
+    font-family:'Roboto', sans-serif;
+    font-size: 12px;
+    padding-right: 15px;
+ }
+
+.ol-popup-content ul li table tbody tr th td{
+    font-family:'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+.ol-geocoder .gcd-gl-control{
+    width: 2.1em!important;
+}
+    
+.ol-geocoder .gcd-gl-expanded {
+    width: 15.625em!important;
+    height: 2.1875em;
+}
+
+.ol-touch .ol-geocoder.gcd-gl-container{
+    top: 130px!important;
+}
+
+.ol-geocoder .gcd-gl-btn {
+    width: 1.375em!important;
+    height: 1.375em!important;
+    top: .225em!important;
+    background-image: none!important;
+}
+
+.search-layer {
+    top: 135px;
+    left: .5em;
+}
+
+.ol-touch .search-layer {
+    top: 180px;
+}
+
+html, body {
+     background-color: #ffffff;
+}
+
+.ol-control button {
+    background-color: #f8f8f8 !important;
+    color: #000000 !important;
+    border-radius: 0px !important;
+}
+
+.ol-zoom, .geolocate, .gcd-gl-control .ol-control {
+    background-color: rgba(255,255,255,.4) !important;
+    padding: 3px !important;
+}
+       
+.ol-scale-line {
+    background: none !important;
+}
+       
+.ol-scale-line-inner {
+    border: 2px solid #f8f8f8 !important;
+    border-top: none !important;
+    background: rgba(255, 255, 255, 0.5) !important;
+    color: black !important;
+}
+
+.tooltip {
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    color: white;
+    padding: 4px 8px;
+    opacity: 0.7;
+    white-space: nowrap;
+}
+
+.tooltip-measure {
+    opacity: 1;
+    font-weight: bold;
+}
+
+.tooltip-static {
+    background-color: #ffcc33;
+    color: black;
+    border: 1px solid white;
+}
+
+.tooltip-measure:before,
+.tooltip-static:before {
+    border-top: 6px solid rgba(0, 0, 0, 0.5);
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    margin-left: -7px;
+    left: 50%;
+}
+
+.tooltip-static:before {
+    border-top-color: #ffcc33;
+}
+
+.measure-control {
+    top: 65px;
+    left: .5em;
+}
+.ol-touch .measure-control {
+    top: 80px;
+}
+
+html, body, #map {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.layer{
+    margin-bottom: 10px;
+    margin-right: 10px;
+    
+}
+
+#map > div > div.ol-overlaycontainer-stopevent > div.ol-unselectable.ol-control.layer-switcher > div > ul {
+    font-size: 12px;
+    padding: 15px;
+    width: 350px;
+    line-height: 80%
+}
+
+#map > div > div.ol-overlaycontainer-stopevent > div.ol-unselectable.ol-control.layer-switcher > div > ul > li:nth-child(11) > label{
+    font-family: 'Roboto', sans-serifs;
+    user-select: none;
+    pointer-events: auto;
+    list-style: none;
+    line-height: 200%;
+    margin: 0;
+    padding: 0;
+    display: outside;
+    vertical-align: top;
+    font-size: 10px;
+    margin-bottom: 50px;
+}
+
+#map > div > div.ol-overlaycontainer-stopevent > div.ol-unselectable.ol-control.layer-switcher > div > ul > li:nth-child(8) > label{
+    font-family: 'Roboto', sans-serifs;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    pointer-events: auto;
+    list-style: none;
+    font-size: 10px;
+    line-height: 200%;
+    margin: 0;
+    padding: 0;
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 50px;
+}
+
+#map > div > div.ol-overlaycontainer-stopevent > div.ol-unselectable.ol-control.layer-switcher > div > ul > li:nth-child(2) > label{
+    font-family: 'Roboto', sans-serifs;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    pointer-events: auto;
+    list-style: none;
+    font-size: 10px;
+    line-height: 200%;
+    margin: 0;
+    padding: 0;
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 50px;
+}
+
+#map > div > div.ol-overlaycontainer-stopevent > div.ol-unselectable.ol-control.layer-switcher > div > ul > li:nth-child(9) > label{
+    font-family: 'Roboto', sans-serifs;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    pointer-events: auto;
+    list-style: none;
+    font-size: 10px;
+    line-height: 200%;
+    margin: 0;
+    padding: 0;
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 50px;
+}
+
+#map > div > div.ol-overlaycontainer-stopevent > div.ol-unselectable.ol-control.layer-switcher > div > ul > li:nth-child(10) > label{
+    font-family: 'Roboto', sans-serifs;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    pointer-events: auto;
+    list-style: none;
+    font-size: 10px;
+    line-height: 200%;
+    margin: 0;
+    padding: 0;
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 50px;
+}
+
+
+
+/* Estacas */
+
+html body div#map div.ol-viewport div.ol-overlaycontainer-stopevent div.ol-unselectable.ol-control.layer-switcher div.panel ul li.layer label{
+    font-family: 'Roboto', sans-serifs;
+    user-select: none;
+    pointer-events: auto;
+    list-style: none;
+    line-height: 200%;
+    margin: 0;
+    padding: 0;
+    display: outside;
+    vertical-align: top;
+    font-size: 10px;
+    margin-bottom: 50px;
+}
+
+
+html body div#map div.ol-viewport div.ol-overlaycontainer-stopevent div.ol-unselectable.ol-control.layer-switcher div.panel ul li.layer label img{
+    vertical-align:text-bottom;
+    width: 30px;
+    height: 30px;
+    padding-right: 7px;
+}
+
+
+/* Implantações*/
+#map > div > div.ol-overlaycontainer-stopevent > div.ol-unselectable.ol-control.layer-switcher > div > ul > li:nth-child(2) > label > img:nth-child(2){
+    vertical-align:text-bottom;
+    width: 15px;
+    height: 13px;
+    padding-right: 7px;
+}
+
+#map > div > div.ol-overlaycontainer-stopevent > div.ol-unselectable.ol-control.layer-switcher > div > ul > li:nth-child(2) > label > img:nth-child(4){
+    vertical-align:text-bottom;
+    width: 15px;
+    height: 13px;
+    padding-right: 7px;
+}
+
+#map > div > div.ol-overlaycontainer-stopevent > div.ol-unselectable.ol-control.layer-switcher > div > ul > li:nth-child(2) > label > img:nth-child(6){
+    vertical-align:text-bottom;
+    width: 15px;
+    height: 13px;
+    padding-right: 7px;
+}
+
+#map > div > div.ol-overlaycontainer-stopevent > div.ol-unselectable.ol-control.layer-switcher > div > ul > li:nth-child(2) > label > img:nth-child(8){
+    vertical-align:text-bottom;
+    width: 15px;
+    height: 13px;
+    padding-right: 7px;
+}
+
+#map > div > div.ol-overlaycontainer-stopevent > div.ol-unselectable.ol-control.layer-switcher > div > ul > li:nth-child(2) > label > img:nth-child(10){
+    vertical-align:text-bottom;
+    width: 15px;
+    height: 13px;
+    padding-right: 7px;
+}
+
+#map > div > div.ol-overlaycontainer-stopevent > div.ol-unselectable.ol-control.layer-switcher > div > ul > li:nth-child(2) > label > img:nth-child(12){
+    vertical-align:text-bottom;
+    width: 15px;
+    height: 13px;
+    padding-right: 7px;
+}
+
+#map > div > div.ol-overlaycontainer-stopevent > div.ol-unselectable.ol-control.layer-switcher > div > ul > li:nth-child(2) > label > img:nth-child(14){
+    vertical-align:text-bottom;
+    width: 15px;
+    height: 13px;
+    padding-right: 7px;
+}
+
+#map > div > div.ol-overlaycontainer-stopevent > div.ol-unselectable.ol-control.layer-switcher > div > ul > li:nth-child(2) > label > img:nth-child(16){
+    vertical-align:text-bottom;
+    width: 15px;
+    height: 13px;
+    padding-right: 7px;
+}
+
+
+/* Eixo do Lote*/
+
+#map > div > div.ol-overlaycontainer-stopevent > div.ol-unselectable.ol-control.layer-switcher > div > ul > li:nth-child(3) > label > img{
+    vertical-align:sub;
+    width: 15px;
+    height: 15px;
+    padding-right: 7px;
+}
+
+/* Federais*/
+html body div#map div.ol-viewport div.ol-overlaycontainer-stopevent div.ol-unselectable.ol-control.layer-switcher div.panel ul li.layer label img{
+    vertical-align:sub;
+    width: 15px;
+    height: 15px;
+    padding-right: 7px;
+}
+
+/* Estaduais*/
+html body div#map div.ol-viewport div.ol-overlaycontainer-stopevent div.ol-unselectable.ol-control.layer-switcher div.panel ul li.layer label img{
+    vertical-align:sub;
+    width: 15px;
+    height: 15px;
+    padding-right: 7px;  
+}
+
+/* Pedologia*/
+html body div#map div.ol-viewport div.ol-overlaycontainer-stopevent div.ol-unselectable.ol-control.layer-switcher div.panel ul li.layer label img{
+    vertical-align:middle;
+    width: 20px;
+    height: 20px;
+    padding-right: 7px;  
+}
+
